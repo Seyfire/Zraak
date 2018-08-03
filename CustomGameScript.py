@@ -12,9 +12,9 @@ class CustomGameScript:
     def __init__(self, main):
         self._game = main
         game = self._game
-        
+
         # start coding down here
-        game.AddEnemy(120,120)
+        # game.AddEnemy(120,120)
 
 #####################################################
 #   Update function                                 #
@@ -25,6 +25,4 @@ class CustomGameScript:
     def update(self):
         game = self._game
         self.time += 1
-        
         # start coding down here
-        

@@ -22,7 +22,7 @@ class Zombie:
     def __init__(self, x, y, health, score, damage, reach):
         self.rect = pygame.Rect(x, y, 32, 32)
         self.strip = SpriteStripAnim.SpriteStripAnim('assets/zombie.png', (0,0,32,32), 4, 1, True, c.FPS / 10)
-        self.imag = self.strip.iter()
+        self.imag = self.strip.iter().next()
         self.health = health
         self.score = score
         self.ticks_to_hit = c.FPS
