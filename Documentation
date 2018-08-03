@@ -1,0 +1,73 @@
+| ***************************************************
+| *** game *******************************************
+| ----------------------------------------------------
+| Variables
+| ----------------------------------------------------
+| player 	|   the player character
+|
+| ----------------------------------------------------
+| Functions
+| ----------------------------------------------------
+| AddEnemy(x, y)
+| AddEnemy(x, y, health, score, damage, reach)
+|   |spawns an enemy with the given settings
+|	|   x       : the x position to spawn the enemy at
+|   |   y       : the y position to spawn the enemy at
+|   |   health  : the amount of health the enemy has
+|   |   score   : how much score you will get if you defeat the enemy
+|   |   reach   : how big the enemy hitbox is
+
+
+
+| ****************************************************
+| *** player *****************************************
+| ----------------------------------------------------
+| Variables
+| ----------------------------------------------------
+| alive		|   True if the player is alive
+| health    |   the amount of health the player has
+| speed     |   the movement speed of the player
+
+
+
+| ****************************************************
+| *** Zombie *****************************************
+| ----------------------------------------------------
+| Variables
+| ----------------------------------------------------
+| speed       		|   Speed of the monster in pixels / frame
+| destroyed   		|   Flag for if the zombie is dead or not
+| hit_on_last_attack|   Signals if the zombie was hit on the last player hit
+| health			|   Monster health
+| score      		|   Score that the monster is worth
+| ticks_to_hit		|   How fast the zombie hits a player in frames/hit
+| damage			|   How much damage the monster does to the player
+| reach             |	How far the zombies can reach
+|
+| ----------------------------------------------------
+| Functions
+| ----------------------------------------------------
+| hit()  		|	Does 1 damage to the monster
+
+
+
+| ****************************************************
+| *** c **********************************************
+| ******* (aka Constants) ****************************
+| ----------------------------------------------------
+| Variables
+| ----------------------------------------------------
+| SCREENRECT	|	Size of the game window
+| FPS           |	Frames every second, also controls how fast the game runs
+| PLAYERREACH   |	Controls the distance a player can reach in pixels
+
+
+
+| ****************************************************
+| *** g **********************************************
+| ******* (aka Global Variables) *********************
+| ----------------------------------------------------
+| Variables
+| ----------------------------------------------------
+| KEYSTATE		|	which keys on the keyboard are currently being pressed
+| MOUSEPOS		|	x, y location of mouse cursor
